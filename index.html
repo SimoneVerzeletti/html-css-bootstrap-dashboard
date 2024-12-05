@@ -8,49 +8,50 @@
     <title>Bootstrap dashboard</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand img-fluid" href="#"><img src="./img/duck.png" width="50" alt="Paperella Boolean"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Anagrafica utenti</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Storico prestiti</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Help</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-6 gy-4"><h1>Catalogo libri</h1></div>
-          <button type="button" class="btn btn-primary col-4 gy-4">Aggiungi libro</button>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand img-fluid" href="#"><img src="./img/duck.png" width="50" alt="Paperella Boolean"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anagrafica utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storico prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
         </div>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th class="col-6">Titolo</th>
-              <th class="d-none d-md-table-cell">Data di prestito</th>
-              <th class="col-3">Stato</th>
-              <th class="col-3 ">Azioni</th>
-            </tr>
-          </thead> 
-          <tbody>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container my-4">
+      <div class="d-flex">
+          <div class="col"><h1>Catalogo libri</h1></div>
+          <div class="col-auto ">
+            <button type="button" class="btn btn-sm btn-primary">Aggiungi libro</button>
+          </div>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th class="col-6">Titolo</th>
+            <th class="d-none d-md-table-cell">Data di prestito</th>
+            <th class="col-3">Stato</th>
+            <th class="col-3 ">Azioni</th>
+          </tr>
+        </thead> 
+        <tbody>
             <tr>
               <td>I pilastri della terra</td>
               <td class="d-none d-md-table-cell">-</td>
@@ -123,11 +124,10 @@
               <td><span class="badge bg-success">Disponibile</span></td>
               <td class="d-flex align-items-center gap-2 flex-nowrap"><button type="button" class="btn btn-outline-secondary btn-sm bi bi-pencil-fill "></button><button type="button" class="btn btn-outline-secondary btn-sm bi bi-trash3-fill"></button></td>
             </tr>            
-          </tbody>
-        </table>
-      </div>
-      </div>
-    </main>
+        </tbody>
+      </table>
+    </div>
+  </main>
 
 
 
